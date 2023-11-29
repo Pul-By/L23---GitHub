@@ -7,13 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    // MARK: - @IBOutlet
+    @IBOutlet private weak var textLabel: UILabel!
+    
+    // MARK: - @IBAction
+    @IBAction func nextScreenButtonTapped(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 
 }
 

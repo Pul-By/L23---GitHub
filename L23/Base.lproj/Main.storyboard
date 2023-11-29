@@ -22,15 +22,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSX-kK-c9Q">
+                                <rect key="frame" x="159" y="496.66666666666674" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="nextScreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTj-rl-WIO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VSX-kK-c9Q" firstAttribute="top" secondItem="NdX-Vm-v1N" secondAttribute="bottom" constant="60" id="0ix-XZ-ffg"/>
                             <constraint firstItem="NdX-Vm-v1N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NZG-le-0jK"/>
                             <constraint firstItem="NdX-Vm-v1N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pz7-WJ-qO1"/>
+                            <constraint firstItem="VSX-kK-c9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YdC-iy-wM5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="WNL-NV-MSf"/>
+                    <connections>
+                        <outlet property="textLabel" destination="NdX-Vm-v1N" id="85S-lE-S6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
