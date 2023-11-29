@@ -28,6 +28,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
                                 <connections>
                                     <action selector="nextScreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTj-rl-WIO"/>
+                                    <segue destination="xHY-rS-Nqz" kind="show" id="aRv-e1-NR3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,12 +50,29 @@
             </objects>
             <point key="canvasLocation" x="994.6564885496183" y="3.5211267605633805"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="mdh-jz-Hvb">
+            <objects>
+                <viewController id="xHY-rS-Nqz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0pG-e2-HzT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="51C-9u-a9D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="US4-N8-61q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYy-aW-5rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="11"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qkx-nX-mgY">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bQV-vQ-5Y2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOf-gG-0RN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
