@@ -109,31 +109,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwi-yb-qej">
-                                <rect key="frame" x="165" y="359" width="63" height="21"/>
+                                <rect key="frame" x="165" y="109" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4pu-3w-rZB">
-                                <rect key="frame" x="70" y="430.33333333333331" width="253" height="127.66666666666669"/>
+                                <rect key="frame" x="333" y="104.33333333333333" width="20.666666666666686" height="29.666666666666671"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="T4N-PF-QEN"/>
+                                    <constraint firstAttribute="height" constant="30" id="T4N-PF-QEN"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-rt-Fw3">
+                                <rect key="frame" x="126.33333333333333" y="684" width="140.66666666666669" height="35"/>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.1960784314" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Delete Account"/>
+                                <connections>
+                                    <action selector="deleteAccountButtonTapped:" destination="GCe-tT-K9h" eventType="touchUpInside" id="NGm-FO-ti2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WLg-YG-prl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lwi-yb-qej" firstAttribute="centerX" secondItem="X0C-hz-A5K" secondAttribute="centerX" id="4Zy-cW-SHa"/>
-                            <constraint firstItem="4pu-3w-rZB" firstAttribute="top" secondItem="Lwi-yb-qej" secondAttribute="bottom" constant="50" id="5pD-vG-wnM"/>
-                            <constraint firstItem="Lwi-yb-qej" firstAttribute="top" secondItem="WLg-YG-prl" secondAttribute="top" constant="300" id="L1S-Dj-7Cp"/>
-                            <constraint firstItem="WLg-YG-prl" firstAttribute="trailing" secondItem="4pu-3w-rZB" secondAttribute="trailing" constant="70" id="S9L-W6-VSV"/>
-                            <constraint firstItem="4pu-3w-rZB" firstAttribute="leading" secondItem="WLg-YG-prl" secondAttribute="leading" constant="70" id="aKs-Xb-5t2"/>
+                            <constraint firstItem="4pu-3w-rZB" firstAttribute="leading" secondItem="Lwi-yb-qej" secondAttribute="trailing" constant="105" id="6J3-Tj-kdW"/>
+                            <constraint firstItem="Lwi-yb-qej" firstAttribute="top" secondItem="WLg-YG-prl" secondAttribute="top" constant="50" id="L1S-Dj-7Cp"/>
+                            <constraint firstItem="WLg-YG-prl" firstAttribute="bottom" secondItem="qV8-rt-Fw3" secondAttribute="bottom" constant="50" id="Mlt-wT-7BS"/>
+                            <constraint firstItem="4pu-3w-rZB" firstAttribute="top" secondItem="WLg-YG-prl" secondAttribute="top" constant="45" id="cOs-fC-BJW"/>
+                            <constraint firstItem="qV8-rt-Fw3" firstAttribute="centerX" secondItem="X0C-hz-A5K" secondAttribute="centerX" id="oCY-Yg-RUM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="bDy-SO-UwT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNb-vU-Inv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GCe-tT-K9h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1062" y="922"/>
         </scene>

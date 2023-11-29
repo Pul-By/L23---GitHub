@@ -13,7 +13,11 @@ final class SecondViewController: UIViewController {
     @IBOutlet private weak var textFieldView: UITextField!
     
     @IBAction private func saveButtonTapped(_ sender: Any) {
-        textLabel.text = textFieldView.text ?? "" 
+        textLabel.text = textFieldView.text ?? ""
     }
 
+    @IBAction private func deleteAccountButtonTapped(_ sender: Any) {
+        // delete Account
+    }
+    
 }
