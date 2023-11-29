@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="L23" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                             <constraint firstItem="VSX-kK-c9Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YdC-iy-wM5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WNL-NV-MSf"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="mail.and.text.magnifyingglass" catalog="system" id="WNL-NV-MSf"/>
                     <connections>
                         <outlet property="textLabel" destination="NdX-Vm-v1N" id="85S-lE-S6g"/>
                     </connections>
@@ -57,14 +57,42 @@
                     <view key="view" contentMode="scaleToFill" id="0pG-e2-HzT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Screen!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-mT-H88">
+                                <rect key="frame" x="148" y="410.66666666666669" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="51C-9u-a9D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cmw-mT-H88" firstAttribute="centerY" secondItem="0pG-e2-HzT" secondAttribute="centerY" id="Jch-so-tw7"/>
+                            <constraint firstItem="Cmw-mT-H88" firstAttribute="centerX" secondItem="0pG-e2-HzT" secondAttribute="centerX" id="vWp-ry-vxK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="US4-N8-61q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYy-aW-5rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1795" y="11"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ZPD-jT-Jga">
+            <objects>
+                <viewController id="BL4-Rv-Y3Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X0C-hz-A5K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WLg-YG-prl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="bDy-SO-UwT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNb-vU-Inv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="922"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qkx-nX-mgY">
@@ -78,6 +106,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Aqc-fC-Jib"/>
+                        <segue destination="BL4-Rv-Y3Z" kind="relationship" relationship="viewControllers" id="nvd-Ud-Zwh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a78-cG-X9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -86,6 +115,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="mail.and.text.magnifyingglass" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
