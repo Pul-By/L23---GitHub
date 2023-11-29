@@ -109,17 +109,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwi-yb-qej">
-                                <rect key="frame" x="165" y="415.66666666666669" width="63" height="21"/>
+                                <rect key="frame" x="165" y="359" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4pu-3w-rZB">
+                                <rect key="frame" x="70" y="430.33333333333331" width="253" height="127.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T4N-PF-QEN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WLg-YG-prl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lwi-yb-qej" firstAttribute="centerX" secondItem="X0C-hz-A5K" secondAttribute="centerX" id="4Zy-cW-SHa"/>
-                            <constraint firstItem="Lwi-yb-qej" firstAttribute="centerY" secondItem="X0C-hz-A5K" secondAttribute="centerY" id="ud1-4t-gxG"/>
+                            <constraint firstItem="4pu-3w-rZB" firstAttribute="top" secondItem="Lwi-yb-qej" secondAttribute="bottom" constant="50" id="5pD-vG-wnM"/>
+                            <constraint firstItem="Lwi-yb-qej" firstAttribute="top" secondItem="WLg-YG-prl" secondAttribute="top" constant="300" id="L1S-Dj-7Cp"/>
+                            <constraint firstItem="WLg-YG-prl" firstAttribute="trailing" secondItem="4pu-3w-rZB" secondAttribute="trailing" constant="70" id="S9L-W6-VSV"/>
+                            <constraint firstItem="4pu-3w-rZB" firstAttribute="leading" secondItem="WLg-YG-prl" secondAttribute="leading" constant="70" id="aKs-Xb-5t2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="bDy-SO-UwT"/>
@@ -149,6 +158,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="mail.and.text.magnifyingglass" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
